@@ -1,0 +1,130 @@
+mitch@client:~/miniVPN/src/tls$ openssl s_client -connect dzurick.com:4433 -CAfile ca_client/modelCA_cert.pem 
+CONNECTED(00000005)
+depth=1 C = US, ST = Arizona, L = Tucson, O = UofA, OU = ECE, CN = ECE471, emailAddress = mitchdz@email.arizona.edu
+verify return:1
+depth=0 C = US, ST = Arizona, O = UofA, OU = ECE, CN = ECE471, emailAddress = mitchdz@email.arizona.edu
+verify return:1
+---
+Certificate chain
+ 0 s:C = US, ST = Arizona, O = UofA, OU = ECE, CN = ECE471, emailAddress = mitchdz@email.arizona.edu
+   i:C = US, ST = Arizona, L = Tucson, O = UofA, OU = ECE, CN = ECE471, emailAddress = mitchdz@email.arizona.edu
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIE9zCCAt+gAwIBAgICEAIwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAlVT
+MRAwDgYDVQQIDAdBcml6b25hMQ8wDQYDVQQHDAZUdWNzb24xDTALBgNVBAoMBFVv
+ZkExDDAKBgNVBAsMA0VDRTEPMA0GA1UEAwwGRUNFNDcxMSgwJgYJKoZIhvcNAQkB
+FhltaXRjaGR6QGVtYWlsLmFyaXpvbmEuZWR1MB4XDTIwMDUwNjE3MzgxNVoXDTIx
+MDUwNjE3MzgxNVowdzELMAkGA1UEBhMCVVMxEDAOBgNVBAgMB0FyaXpvbmExDTAL
+BgNVBAoMBFVvZkExDDAKBgNVBAsMA0VDRTEPMA0GA1UEAwwGRUNFNDcxMSgwJgYJ
+KoZIhvcNAQkBFhltaXRjaGR6QGVtYWlsLmFyaXpvbmEuZWR1MIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvWIpO9Di7nF4eiJ/+AFCS2weDb3zqTmxMw4d
+2sjucDzp1U4g9Vf3EhNrIwxymK/l1y54tw9//sv8YorsbwvBm2NJzYMq83Tif2Up
+F3C+vABfOcy4fQSd0C3YlekWHORc8oHpU+E4UzrpBmMLnK/0yIGXusUsPyv3zOLt
+24NxEAe0Uob1wYJiDtGG0JNQ8GicbVkaJJtBxFmJ9UXglbQBY78mmRo+NoeYnD2v
+0HQpbI35QcvACJH8Kjc8cRfHv3saOnVPW6dXPffGS9HO3WlYvm7WzLMoWaDA0PL3
+wKc1VU/+Z2sI3oYDx9QBemhzLQkDEyPaD3SDhbZkFgy3IcM37wIDAQABo3sweTAJ
+BgNVHRMEAjAAMCwGCWCGSAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0
+aWZpY2F0ZTAdBgNVHQ4EFgQU8hFJX/ANLxE5cIifD0mNklM/QCgwHwYDVR0jBBgw
+FoAUpJomxZppiMqeOrU2XACSPNdZ/KowDQYJKoZIhvcNAQELBQADggIBAGqizidD
+zkhXVvCxoClyRnXkCGxGFA+5lDGWHMw1dRwuduKpOlEYT2Ahfi3saIpG3NrkIhzX
+pLRQ92JEHvW76wtE2hRHc8NWuiBCo72paZoS4IqLUl9w5WLC+bdfpjQI3Kz4Ehtl
+wAjCGmWfZWy/+WRTRqxWqMD4i4Vfhu8oBN4+QymCXTJIOQs1HK7lp4cQf77lVWAY
+jx7kQZqWhCCK6BX3lAlDmX+akY7uOXbZTIwUMoTWFheoreOuoDxNawrFcJDR25J5
+9cEtnhCH6HG1/tsa1OhFey0b58Ij0RCMMlf3isX8bSAKaV5whoigkUlA2zvWnt1P
+cAN7Ome0s8439Xuik7z0BUzYksLKfqmsHQSGR0vvlIanJw4FK4qxgseBi4pF/3mb
+NESQIo1tY/LK3ewSMexO9LzdClqBFt7ZnMjmn3eaM9dp+O76A+e28BwbaOizM8Lp
+1aSd82vIikLoQOZhwNC9VhxLkCG/6u94ZQLVOYA7r8KUazwdglnpaWXyqOZHnAN1
+c0jus6YD9JxXW3NreVV5EN8SKKH/WXW2FkZQetBr//uBvvhDE93LWCs3ZpqJI1tN
+hoYrRW+c+vTSjJTvqsJdchMctBH3gnm4VfjrKey9aFJzMjETYDLyBU3GAQ7r6YAS
+F1w+HXCOUG5OVWu3Y8MuzrCxU+Spb3z6pnxO
+-----END CERTIFICATE-----
+subject=C = US, ST = Arizona, O = UofA, OU = ECE, CN = ECE471, emailAddress = mitchdz@email.arizona.edu
+
+issuer=C = US, ST = Arizona, L = Tucson, O = UofA, OU = ECE, CN = ECE471, emailAddress = mitchdz@email.arizona.edu
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1831 bytes and written 393 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: CCF35EB20153A747B6F3913BCD3A1A7218561F3CC633DA2A6F2893C70A580D81
+    Session-ID-ctx: 
+    Resumption PSK: 7BF728E86E9950FD428AC4DD8367E98F182BAE257D3FC863B3B7D1301F4A4EB4D5741B771D6F1B39DF9363FB75A482F1
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - d4 cb b7 5e 11 13 ed 64-70 23 45 80 9b 80 fc c5   ...^...dp#E.....
+    0010 - 98 c1 ce 0e 93 89 59 4f-c2 9b d0 a6 45 45 6d 4e   ......YO....EEmN
+    0020 - e1 d8 19 8a 5d 28 cc b6-78 a2 e9 07 c1 c5 38 56   ....](..x.....8V
+    0030 - 5b 2a 06 43 63 55 3a 14-56 64 ae 4a f6 00 69 6d   [*.CcU:.Vd.J..im
+    0040 - 7c aa 3a 85 3f 4e 49 c0-1b 9a dd 98 d9 51 df 8f   |.:.?NI......Q..
+    0050 - f7 cf 5e 7c e8 9f 19 c8-69 9a b9 0a c4 d3 d7 d9   ..^|....i.......
+    0060 - c3 f8 4c 14 a9 76 c2 c1-d1 5a f8 2b da 70 96 71   ..L..v...Z.+.p.q
+    0070 - 19 bc 65 02 e9 49 6e 34-29 a0 d5 48 c4 a9 3b 16   ..e..In4)..H..;.
+    0080 - 33 70 36 99 f3 04 91 8c-be 7a 15 08 b5 35 a9 3d   3p6......z...5.=
+    0090 - 0f 1c 1f 85 ee 39 9e c4-1c 94 e2 aa f1 c0 fb f5   .....9..........
+    00a0 - 51 79 01 fa bd ba a8 12-40 cf 5d 73 c4 8d 40 82   Qy......@.]s..@.
+    00b0 - 24 88 b0 43 d3 4a 79 5e-ca fb eb 72 e7 a0 78 60   $..C.Jy^...r..x`
+
+    Start Time: 1588787865
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 7248390A7EF8898CD463306559ACF495CEBCC3E4C4564F6727DFE604690569C4
+    Session-ID-ctx: 
+    Resumption PSK: 708857341E4A4EEF4B624A2C93F6665E6698F681876DBCB0E414642AEB9ECAE6653EC6F9F72238AF20F52ECC997A598D
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - d4 cb b7 5e 11 13 ed 64-70 23 45 80 9b 80 fc c5   ...^...dp#E.....
+    0010 - 4e 2b fb 1e 68 89 7b f6-e8 de 54 7c a2 bd 6e 89   N+..h.{...T|..n.
+    0020 - f5 99 fa 51 00 e1 71 fc-98 4f 8f 0c 74 79 72 4a   ...Q..q..O..tyrJ
+    0030 - 7e a2 8c ce 4b 44 09 45-41 2b 73 51 53 55 9d 35   ~...KD.EA+sQSU.5
+    0040 - 95 ed 00 d9 be a0 74 63-7f c8 2f e4 32 ab 73 3b   ......tc../.2.s;
+    0050 - c7 16 ec f0 82 49 e9 05-8a c1 c4 ef 58 09 7a ed   .....I......X.z.
+    0060 - 37 ca 4d b1 29 01 9e 5d-46 9b 8c 44 c3 67 95 1a   7.M.)..]F..D.g..
+    0070 - b1 60 85 c9 c6 ba 42 80-00 a5 1f 54 f4 7c ad f1   .`....B....T.|..
+    0080 - 4f e5 72 25 61 b5 58 eb-06 47 ee 9c b7 3f 8c 6c   O.r%a.X..G...?.l
+    0090 - 74 e7 2c 58 99 31 74 dd-05 3e 9d ef 8d 84 0b 43   t.,X.1t..>.....C
+    00a0 - cc f1 48 69 87 28 d5 e7-21 88 00 d8 9b a7 13 e1   ..Hi.(..!.......
+    00b0 - 70 d8 50 59 58 cf ec da-c3 62 b1 6c 8d 71 83 60   p.PYX....b.l.q.`
+
+    Start Time: 1588787865
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+
